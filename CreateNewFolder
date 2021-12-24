@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('CreateFolder') {
+            steps {
+                writeFile file: 'C:\\JenkinsBuilds', text: 'Jenkins242'
+            }
+        }
+    }
+}
